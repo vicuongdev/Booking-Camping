@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|c:\\users\\vicuo\\onedrive\\desktop\\code\\be_bookingcamping\\be_bookingcamping\\repository\\tentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|solutionrelative:be_bookingcamping\\repository\\tentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\be_bookingcamping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|solutionrelative:be_bookingcamping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|c:\\users\\vicuo\\onedrive\\desktop\\code\\be_bookingcamping\\be_bookingcamping\\controllers\\tent\\tentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|solutionrelative:be_bookingcamping\\controllers\\tent\\tentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|c:\\users\\vicuo\\onedrive\\desktop\\code\\be_bookingcamping\\be_bookingcamping\\models\\tent\\tentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|solutionrelative:be_bookingcamping\\models\\tent\\tentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|c:\\users\\vicuo\\onedrive\\desktop\\code\\be_bookingcamping\\be_bookingcamping\\models\\tent\\tentreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D591BAC-0AC7-41A8-ACA8-CA442B04AB28}|BE_BookingCamping\\BE_BookingCamping.csproj|solutionrelative:be_bookingcamping\\models\\tent\\tentreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TentController.cs",
+              "DocumentMoniker": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Controllers\\Tent\\TentController.cs",
+              "RelativeDocumentMoniker": "BE_BookingCamping\\Controllers\\Tent\\TentController.cs",
+              "ToolTip": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Controllers\\Tent\\TentController.cs",
+              "RelativeToolTip": "BE_BookingCamping\\Controllers\\Tent\\TentController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwD8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T11:57:16.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Repository\\TentRepository.cs",
+              "RelativeDocumentMoniker": "BE_BookingCamping\\Repository\\TentRepository.cs",
+              "ToolTip": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Repository\\TentRepository.cs",
+              "RelativeToolTip": "BE_BookingCamping\\Repository\\TentRepository.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAD4vzYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T11:48:45.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TentReponse.cs",
+              "DocumentMoniker": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Models\\Tent\\TentReponse.cs",
+              "RelativeDocumentMoniker": "BE_BookingCamping\\Models\\Tent\\TentReponse.cs",
+              "ToolTip": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Models\\Tent\\TentReponse.cs",
+              "RelativeToolTip": "BE_BookingCamping\\Models\\Tent\\TentReponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T11:48:23.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TentVM.cs",
+              "DocumentMoniker": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Models\\Tent\\TentVM.cs",
+              "RelativeDocumentMoniker": "BE_BookingCamping\\Models\\Tent\\TentVM.cs",
+              "ToolTip": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Models\\Tent\\TentVM.cs",
+              "RelativeToolTip": "BE_BookingCamping\\Models\\Tent\\TentVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T11:48:00.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Program.cs",
+              "RelativeDocumentMoniker": "BE_BookingCamping\\Program.cs",
+              "ToolTip": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\Program.cs",
+              "RelativeToolTip": "BE_BookingCamping\\Program.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAF0AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T08:08:29.583Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

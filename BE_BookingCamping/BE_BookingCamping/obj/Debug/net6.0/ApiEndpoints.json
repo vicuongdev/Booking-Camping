@@ -1,0 +1,580 @@
+[
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Admin.AdminController",
+    "Method": "BecomeAdmin",
+    "RelativePath": "api/admin/BecomeAdmin/{emID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Admin.AdminController",
+    "Method": "GetAllAdmin",
+    "RelativePath": "api/admin/GetAllAdmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Authentication.AuthController",
+    "Method": "CurrentUser",
+    "RelativePath": "api/auth/current-user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Authentication.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRequest",
+        "Type": "BE_BookingCamping.Models.Login.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Authentication.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/auth/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshTokenRequest",
+        "Type": "BE_BookingCamping.Models.RefreshToken.RefreshTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Authentication.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRequest",
+        "Type": "BE_BookingCamping.Models.Register.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Booking.BookingController",
+    "Method": "CreateBooking",
+    "RelativePath": "api/booking/CreateBooking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BE_BookingCamping.Models.Booking.BookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Booking.BookingController",
+    "Method": "DeleteBooking",
+    "RelativePath": "api/booking/DeleteBooking",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Booking.BookingController",
+    "Method": "GetAllBooking",
+    "RelativePath": "api/booking/GetAllBooking",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "day",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Booking.BookingController",
+    "Method": "GetBookingByUser",
+    "RelativePath": "api/booking/GetBookingByUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Booking.BookingController",
+    "Method": "UpdateBooking",
+    "RelativePath": "api/booking/UpdateBooking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "booking",
+        "Type": "BE_BookingCamping.Models.Booking.BookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.CategoryController",
+    "Method": "AddCategory",
+    "RelativePath": "api/category/AddCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "BE_BookingCamping.Models.Category.CategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.CategoryController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/category/DeleteCategory",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "catId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.CategoryController",
+    "Method": "GetAllCategory",
+    "RelativePath": "api/category/GetAllCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.CategoryController",
+    "Method": "GetCategoryById",
+    "RelativePath": "api/category/GetCategoryById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.CategoryController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/category/UpdateCategory",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "BE_BookingCamping.Models.Category.CategoryUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Employee.EmployeeController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "api/employee/DeleteEmployee",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Employee.EmployeeController",
+    "Method": "GetAllEmployee",
+    "RelativePath": "api/employee/GetAllEmployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Feedback.FeedbackController",
+    "Method": "GetFeedbackById",
+    "RelativePath": "api/Feedback/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Feedback.FeedbackController",
+    "Method": "CreateFeedback",
+    "RelativePath": "api/Feedback/CreateFeedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BE_BookingCamping.Models.Feedback.FeedbackRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Feedback.FeedbackController",
+    "Method": "DeleteAllFeedbacks",
+    "RelativePath": "api/Feedback/DeleteAllFeedbacks",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Feedback.FeedbackController",
+    "Method": "DeleteFeedback",
+    "RelativePath": "api/Feedback/DeleteFeedback",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Feedback.FeedbackController",
+    "Method": "UpdateFeedback",
+    "RelativePath": "api/Feedback/EditFeedback",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "feedbackRequest",
+        "Type": "BE_BookingCamping.Models.Feedback.FeedbackRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Feedback.FeedbackController",
+    "Method": "GetAllFeedbacks",
+    "RelativePath": "api/Feedback/GetAllFeedbacks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Location.LocationController",
+    "Method": "GetLocationNoBooked",
+    "RelativePath": "api/loacation/GetLocationNoBooked",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dayCheckIn",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "dayCheckOut",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Location.LocationController",
+    "Method": "GetLocation",
+    "RelativePath": "api/loacation/GetLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Product.ProductController",
+    "Method": "AddProduct",
+    "RelativePath": "api/product/AddProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "BE_BookingCamping.Models.Product.ProductVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Product.ProductController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/product/DeleteProduct",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Product.ProductController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/product/GetAllProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Product.ProductController",
+    "Method": "GetProductByCategory",
+    "RelativePath": "api/product/GetProductByCategory/{CategoryID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategoryID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Product.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "api/product/GetProductById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.Product.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/product/UpdateProduct",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productResponse",
+        "Type": "BE_BookingCamping.Models.Product.ProductResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.TentsController",
+    "Method": "AddTent",
+    "RelativePath": "api/Tents/AddTent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tent",
+        "Type": "BE_BookingCamping.Models.Tent.TentVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BE_BookingCamping.Models.Tent.TentResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.TentsController",
+    "Method": "DeleteTent",
+    "RelativePath": "api/Tents/DeleteTent/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.TentsController",
+    "Method": "GetAllTents",
+    "RelativePath": "api/Tents/GetAllTents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.TentsController",
+    "Method": "GetTent",
+    "RelativePath": "api/Tents/GetTent/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.TentsController",
+    "Method": "UpdateTent",
+    "RelativePath": "api/Tents/UpdateTent/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tent",
+        "Type": "BE_BookingCamping.Models.Tent.TentResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE_BookingCamping.Controllers.UploadController",
+    "Method": "UploadFile",
+    "RelativePath": "api/Upload/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
