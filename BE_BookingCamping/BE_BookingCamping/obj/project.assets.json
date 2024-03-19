@@ -6772,23 +6772,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vicuo\\.nuget\\packages\\": {},
+    "C:\\Users\\acer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\BE_BookingCamping.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Desktop\\Booking-Camping\\BE_BookingCamping\\BE_BookingCamping\\BE_BookingCamping.csproj",
       "projectName": "BE_BookingCamping",
-      "projectPath": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\BE_BookingCamping.csproj",
-      "packagesPath": "C:\\Users\\vicuo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vicuo\\OneDrive\\Desktop\\CODE\\BE_BookingCamping\\BE_BookingCamping\\obj\\",
+      "projectPath": "C:\\Users\\acer\\Desktop\\Booking-Camping\\BE_BookingCamping\\BE_BookingCamping\\BE_BookingCamping.csproj",
+      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acer\\Desktop\\Booking-Camping\\BE_BookingCamping\\BE_BookingCamping\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vicuo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6797,7 +6797,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6810,11 +6810,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6877,7 +6872,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
