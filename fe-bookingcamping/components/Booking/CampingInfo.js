@@ -169,7 +169,7 @@ const CampingInfo = () => {
         <p>Hòa mình vào thiên nhiên tại khu cắm trại Mã đà - Đặt chỗ ngay để trải nghiệm không gian thiên nhiên tuyệt vời!</p>
         <div className="camping-map-container">
           <img src="/images/map-new.jpg" alt="Camping Map" />
-          <svg width="10%" height="10%" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+          <svg width="50%" height="50%" viewBox="916 973 716 539" xmlns="http://www.w3.org/2000/svg">
             {tents.map((tent, index) => (  
               <use
                 key={index}
