@@ -111,19 +111,19 @@ const CampingInfo = () => {
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
   const calculateCoordinates = (index) => {
-    const row = Math.floor(index / 5); // so hang
-    const col = index % 5; // so cot.
-    const x = col * 100; 
-    const y = row * 100; 
+    const row = Math.floor(index / 10);
+    const col = index % 10;
+    const x = col * 50;
+    const y = row * 50;
     return { x, y };
   }
 
   const fetchTents = async () => {
     try {
-      const response = await axios.get(`${baseUrl}/api/tents/GetAllTents`); 
+      const response = await axios.get(`${baseUrl}/api/tents/GetAllTents`);
       const mappedTents = response.data.map((tent, index) => ({
         ...tent,
-        coordinates: calculateCoordinates(index) 
+        coordinates: calculateCoordinates(index)
       }));
       setTents(mappedTents);
     } catch (error) {
@@ -140,18 +140,25 @@ const CampingInfo = () => {
   }
 
   const handleMouseDown = (tent, event) => {
-    setDraggingTent(tent);
-    const rect = event.target.getBoundingClientRect();
-    const offsetX = event.clientX - rect.left;
-    const offsetY = event.clientY - rect.top;
-    setDragOffset({ x: offsetX, y: offsetY });
+    const offsetX = event.clientX - tent.coordinates.x;
+    const offsetY = event.clientY - tent.coordinates.y;
+    setDraggingTent({ ...tent, dragOffset: { x: offsetX, y: offsetY } });
   }
 
   const handleMouseMove = (event) => {
     if (draggingTent) {
-      const newX = event.clientX - dragOffset.x;
-      const newY = event.clientY - dragOffset.y;
+      const newX = event.clientX - draggingTent.dragOffset.x;
+      const newY = event.clientY - draggingTent.dragOffset.y;
       setDraggingTent({ ...draggingTent, coordinates: { x: newX, y: newY } });
+      setTents(prevTents => {
+        const updatedTents = prevTents.map(tent => {
+          if (tent === draggingTent) {
+            return { ...tent, coordinates: { x: newX, y: newY } };
+          }
+          return tent;
+        });
+        return updatedTents;
+      });
     }
   }
 
@@ -162,30 +169,36 @@ const CampingInfo = () => {
   const handleHideDescription = () => {
     setSelectedTent(null);
   }
+
   return (
     <>
       <div className="contact-info" onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
         <h2>Đặt chỗ ngay</h2>
         <p>Hòa mình vào thiên nhiên tại khu cắm trại Mã đà - Đặt chỗ ngay để trải nghiệm không gian thiên nhiên tuyệt vời!</p>
-        <div className="camping-map-container">
-          <img src="/images/map-new.jpg" alt="Camping Map" />
-          <svg width="50%" height="50%" viewBox="916 973 716 539" xmlns="http://www.w3.org/2000/svg">
-            {tents.map((tent, index) => (  
-              <use
-                key={index}
-                xlinkHref="/images/tent-4-svgrepo-com.svg"
-                x={tent.coordinates.x} 
-                y={tent.coordinates.y} 
-                width="50" 
-                height="50" 
-                alt={tent.name}
-                title={tent.name}
-                onMouseDown={(event) => handleMouseDown(tent, event)}
-                onMouseEnter={() => handleTentClick(tent)}
-                onMouseLeave={handleHideDescription}
-              />
-            ))}
-          </svg>
+        <div className="camping-map-container" onMouseMove={handleMouseMove}>
+          <div style={{ position: 'relative' }}>
+            <img src="/images/map-new.jpg" alt="Camping Map" />
+            <svg style={{ position: 'absolute', top: 0, left: 0 }} width="100%" height="100%" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <symbol id="tent" viewBox="0 0 100 100">
+                <image href="/images/tent-svgrepo-com.svg" x="0" y="0" width="50" height="50" />
+              </symbol>
+              {tents.map((tent, index) => (
+                <use
+                  key={index}
+                  xlinkHref="#tent"
+                  x={draggingTent ? draggingTent.coordinates.x : tent.coordinates.x}
+                  y={draggingTent ? draggingTent.coordinates.y : tent.coordinates.y}
+                  width="50"
+                  height="50"
+                  alt={tent.name}
+                  title={tent.name}
+                  onMouseDown={(event) => handleMouseDown(tent, event)}
+                  onMouseEnter={() => handleTentClick(tent)}
+                  onMouseLeave={handleHideDescription}
+                />
+              ))}
+            </svg>
+          </div>
         </div>
         {selectedTent && (
           <div className="tent-description">
@@ -228,6 +241,7 @@ const CampingInfo = () => {
 };
 
 export default CampingInfo;
+
 
 
 
