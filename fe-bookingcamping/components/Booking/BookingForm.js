@@ -23,7 +23,6 @@ const INITIAL_STATE = {
 
 const BookingForm = ({user}) => {
 	const isCustomer = user.role == 3;
-	
 	const [booking, setBooking] = useState(INITIAL_STATE);
 	const [location, setLocation] = useState([]);
 	const [disabled, setDisabled] = React.useState(true);
@@ -132,7 +131,7 @@ const BookingForm = ({user}) => {
 					secondary: "#FFFAEE",
 				},
 			});
-			// setBooking(INITIAL_STATE);
+			setBooking(INITIAL_STATE);
 			router.push("/booking/booking-history");
 		} catch (err) {
 			// toast.error(err., {
